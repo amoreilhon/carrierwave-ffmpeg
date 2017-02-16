@@ -29,7 +29,7 @@ module CarrierWave
         { video_codec: 'libvpx',    
           audio_codec: 'libvorbis' }
       when :ogv
-        { video_codec: 'libvpx', 
+        { video_codec: 'theora', 
           audio_codec: 'libvorbis' }
       else
         raise CarrierWave::ProcessingError.new("Unsupported video format. Error: #{e}")
